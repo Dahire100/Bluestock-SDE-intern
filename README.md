@@ -9,7 +9,8 @@ Welcome to the Bluestock IPO Web Application & REST API project! This platform i
 - ⭐ **Aarti** (Co-Team Lead)  
 - 💻 **Devendra Ratan Ahire**  
 - 🔧 **Ayush Maheshwari**  
-- 🖥️ **Divyansh Singh Tomar**  
+- 🖥️ **Divyansh Singh Tomar**
+- 🖥️ **Divya**  
 
 ---
 
