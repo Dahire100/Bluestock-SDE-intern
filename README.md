@@ -1,1 +1,155 @@
-# Bluestock-SDE-intern
+🌟 Bluestock Fintech IPO Web Application & REST API
+
+Welcome to the Bluestock IPO Web Application & REST API project! This platform is designed to provide users with comprehensive IPO-related details and robust API integrations for client applications.
+
+👥 Team Members
+🏆 Vedant Santosh Deshpande (Team Lead)
+⭐ Aarti (Co-Team Lead)
+💻 Devendra Ratan Ahire
+🔧 Ayush Maheshwari
+🖥️ Divyansh Singh Tomar
+🚀 How to Run the Project
+Follow these steps to set up and run the project locally:
+
+1️⃣ Clone the Repository
+bash
+Copy code
+git 
+clone
+ https://github.com/Vijayvarma115/bluestock-ipo-webapp.git  
+2️⃣ Navigate to the Project Directory
+bash
+Copy code
+cd
+ bluestock-ipo-webapp  
+3️⃣ Install Dependencies
+bash
+Copy code
+pip3 install -r requirements.txt  
+4️⃣ Apply Migrations and Create Superuser
+Make migrations:
+bash
+Copy code
+python3 manage.py makemigrations  
+Migrate the database:
+bash
+Copy code
+python3 manage.py migrate  
+Create a superuser:
+bash
+Copy code
+python3 manage.py createsuperuser  
+5️⃣ Run the Server
+bash
+Copy code
+python3 manage.py runserver  
+🔗 Connecting Django to PostgreSQL
+🛠️ Step 1: Install PostgreSQL
+Download and install PostgreSQL from the
+official
+website
+.
+
+🗂️ Step 2: Create Database and User
+Run the following commands in the PostgreSQL command-line interface (psql):
+
+sql
+Copy code
+CREATE
+ DATABASE bluestock;  
+CREATE
+ 
+USER
+ daiyanalam 
+WITH
+ PASSWORD 
+'12345'
+;  
+ALTER
+ ROLE daiyanalam 
+SET
+ client_encoding 
+TO
+ 
+'utf8'
+;  
+ALTER
+ ROLE daiyanalam 
+SET
+ default_transaction_isolation 
+TO
+ 
+'read committed'
+;  
+ALTER
+ ROLE daiyanalam 
+SET
+ timezone 
+TO
+ 
+'UTC'
+;  
+GRANT
+ 
+ALL
+ PRIVILEGES 
+ON
+ DATABASE bluestock 
+TO
+ daiyanalam;  
+⚙️ Step 3: Install PostgreSQL Adapter for Python
+bash
+Copy code
+pip install psycopg2-binary  
+📜 Step 4: Update settings.py in Django
+Add the following configuration to the DATABASES section in your settings.py file:
+
+python
+Copy code
+DATABASES = {  
+    
+'default'
+: {  
+        
+'ENGINE'
+: 
+'django.db.backends.postgresql'
+,  
+        
+'NAME'
+: 
+'bluestock'
+,  
+        
+'USER'
+: 
+'daiyanalam'
+,  
+        
+'PASSWORD'
+: 
+'12345'
+,  
+        
+'HOST'
+: 
+'localhost'
+,  
+        
+'PORT'
+: 
+'5432'
+,  
+    }  
+}  
+📽️ References
+🎥 Video Tutorial:
+How
+to
+Connect
+Django
+with
+PostgreSQL
+
+✨ Happy Coding!
+This project is a production-level platform designed to ensure precision, security, and scalability for Bluestock Fintech's IPO services. If you encounter issues or have suggestions, feel free to contribute or contact the team. 🌐
