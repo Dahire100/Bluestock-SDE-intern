@@ -1,8 +1,4 @@
-Here’s a polished and visually appealing version of the README file:  
-
----
-
-# 🌟 **Bluestock Fintech IPO Web Application & REST API**  
+ 🌟 **Bluestock Fintech IPO Web Application & REST API**  
 
 Welcome to the Bluestock IPO Web Application & REST API project! This platform is designed to provide users with comprehensive IPO-related details and robust API integrations for client applications.  
 
@@ -105,6 +101,3 @@ DATABASES = {
 ### ✨ **Happy Coding!**  
 This project is a production-level platform designed to ensure precision, security, and scalability for Bluestock Fintech's IPO services. If you encounter issues or have suggestions, feel free to contribute or contact the team. 🌐  
 
----  
-
-Let me know if you’d like more customizations!
