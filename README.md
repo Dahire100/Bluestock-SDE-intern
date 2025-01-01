@@ -1,5 +1,5 @@
  🌟 **Bluestock Fintech IPO Web Application & REST API**  
-![College Image](https://github.com/Dahire100/CS-Notes/blob/main/kkw.jpeg)
+![company logo](https://github.com/Dahire100/Bluestock-SDE-intern/blob/main/logo.jpeg)
 Welcome to the Bluestock IPO Web Application & REST API project! This platform is designed to provide users with comprehensive IPO-related details and robust API integrations for client applications.  
 
 ---
