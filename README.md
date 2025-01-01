@@ -1,4 +1,4 @@
- #🌟 **Bluestock Fintech IPO Web Application & REST API**  
+ ## 🌟**Bluestock Fintech IPO Web Application & REST API**  
 ![company logo](https://github.com/Dahire100/Bluestock-SDE-intern/blob/main/logo.jpeg)
 
 Welcome to the Bluestock IPO Web Application & REST API project! This platform is designed to provide users with comprehensive IPO-related details and robust API integrations for client applications.  
@@ -64,11 +64,11 @@ Download and install PostgreSQL from the [official website](https://www.postgres
 Run the following commands in the PostgreSQL command-line interface (psql):  
 ```sql  
 CREATE DATABASE bluestock;  
-CREATE USER daiyanalam WITH PASSWORD '12345';  
-ALTER ROLE daiyanalam SET client_encoding TO 'utf8';  
-ALTER ROLE daiyanalam SET default_transaction_isolation TO 'read committed';  
-ALTER ROLE daiyanalam SET timezone TO 'UTC';  
-GRANT ALL PRIVILEGES ON DATABASE bluestock TO daiyanalam;  
+CREATE USER devendra WITH PASSWORD 'dev@123';  
+ALTER ROLE devendra SET client_encoding TO 'utf8';  
+ALTER ROLE devendra SET default_transaction_isolation TO 'read committed';  
+ALTER ROLE devendra SET timezone TO 'UTC';  
+GRANT ALL PRIVILEGES ON DATABASE bluestock TO devendra;  
 ```  
 
 ### ⚙️ Step 3: Install PostgreSQL Adapter for Python  
@@ -83,8 +83,8 @@ DATABASES = {
     'default': {  
         'ENGINE': 'django.db.backends.postgresql',  
         'NAME': 'bluestock',  
-        'USER': 'daiyanalam',  
-        'PASSWORD': '12345',  
+        'USER': 'devendra',  
+        'PASSWORD': 'dev@123',  
         'HOST': 'localhost',  
         'PORT': '5432',  
     }  
